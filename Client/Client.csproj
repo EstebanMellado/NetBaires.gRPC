@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <RazorLangVersion>3.0</RazorLangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="3.2.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Build" Version="3.2.1" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="3.2.1" PrivateAssets="all" />
+
+    <PackageReference Include="Google.Protobuf" Version="3.12.4" />
+    <PackageReference Include="Grpc.Tools" Version="2.30.0" PrivateAssets="All" />
+    <PackageReference Include="Grpc.Net.Client" Version="2.30.0" />
+    <PackageReference Include="Grpc.Net.Client.Web" Version="2.30.0" />
+
+    <Protobuf Include="..\Proto\weather.proto" GrpcServices="Client" Link="Protos\weather.proto" Access="Internal" />
+    <Protobuf Include="..\Proto\count.proto" GrpcServices="Client" Link="Protos\count.proto" Access="Internal" />
+  </ItemGroup>
+
+</Project>
