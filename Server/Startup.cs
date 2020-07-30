@@ -62,6 +62,7 @@ namespace Server
             {
                 endpoints.MapGrpcService<WeatherService>().EnableGrpcWeb();
                 endpoints.MapGrpcService<CounterService>().EnableGrpcWeb();
+                endpoints.MapGrpcService<SaludarService>().EnableGrpcWeb();
                 endpoints.MapFallbackToFile("index.html");
             });
         }
