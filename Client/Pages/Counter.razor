@@ -6,13 +6,13 @@
 
 <p>Current count: @currentCount</p>
 
-<button class="btn btn-primary" @onclick="IncrementCount" disabled="@(cts != null)">Start</button>
-<button class="btn btn-primary" @onclick="StopCount" disabled="@(cts == null)">Stop</button>
+<button class="btn btn-primary" @onclick="IncrementCount" disabled="@(cts != null)">Dame números</button>
+<button class="btn btn-primary" @onclick="StopCount" disabled="@(cts == null)">Basta, por favor</button>
 
 <div>
     <img src="/grpc-logo.png" alt="gRPC logo" />
     <p>
-        Incrementing count streamed from a gRPC service.
+        Stream continuo desde el servidor gRPC!
     </p>
 </div>
 
